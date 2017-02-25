@@ -1,0 +1,192 @@
+* {
+      -moz-box-sizing: border-box; /* Firexfox */
+      -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+      box-sizing: border-box; /* IE */
+ }
+ nav{
+   color: white;
+ }
+section{
+  float: left;
+}
+
+ nav ul{
+   list-style-type: none;
+   display: inline-block;
+   color: white;
+   border-left: white 1px;
+ }
+ li{
+   float: left;
+ }
+ li a{
+   display: block;
+   text-align: center;
+   padding: 10px 10px;
+ }
+.link{
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  
+}
+header{
+  margin: 0px;
+  text-align: center;
+  font-size: 18px;
+  background-color: #000000;
+  line-height: normal;
+}
+.section2{
+  background-color: #e7e8e1;
+  width: 100%;
+}
+#date{
+}
+h4 > span {
+  margin: 0 968px;
+  margin-bottom: 20px;
+  margin-right: 0px;
+  margin-top: 10px;
+}
+
+h4{
+  margin-left:97px;
+}
+#image1{
+  background: linear-gradient( rgba(0, 0, 0, -0.5), rgba(0, 0, 0, 0.5) ), url("../images/watchmen1.jpg");
+  background-size: 100% 100%;
+  height: 350px;
+  width: 45%;
+  float: left;
+  margin-left: 5%;
+}
+h2{
+  color: white;
+  float: bottom;
+  margin-top: 130px;
+}
+#image1 h2{
+  margin-top: 280px;
+}
+p{
+  margin-left: 87px;
+}
+.image2{
+  background: linear-gradient( rgba(0, 0, 0, -0.5), rgba(0, 0, 0, 0.5) ), url("../images/watchmen2.jpg");
+}
+.image0002{
+  background: linear-gradient( rgba(0, 0, 0, -0.5), rgba(0, 0, 0, 0.5) ), url("../images/watchmen3.jpg");
+}
+.image002{
+  background: linear-gradient( rgba(0, 0, 0, -0.5), rgba(0, 0, 0, 0.5) ), url("../images/watchmen4.jpg");
+}
+.image02{
+  background: linear-gradient( rgba(0, 0, 0, -0.5), rgba(0, 0, 0, 0.5) ), url("../images/watchmen5.jpg");
+}
+.toplinks{
+  width: 48%;
+}
+.toplinks > section{
+  background-size: 100% 100%;
+  width: 48%;
+  height: 170px;
+  margin-left: 2%;
+  margin-bottom: 10px;
+  float: left;
+}
+.bottomlinks{
+  width: 30%;
+  height: 340px;
+  float: left;
+  margin-top: 100px;
+  margin-left: 3.3333%;
+}
+.bottomlinks img{
+  width: 100%;
+  height: 250px;
+}
+.bottom{
+  padding: 10px 10px 10px 10px;
+}
+@media (max-width: 1024px) and (orientation: portrait){
+  .section2 span{
+    margin: 0 400px;
+  }
+  #image1{
+
+    width: 90%;
+  }
+  .toplinks{
+    width: 100%;
+    padding: 20px 60px;
+  }
+  .bottomlinks {
+      width: 90%;
+      height: 340px;
+      float: left;
+      margin-top: 15px;
+      margin-left: 3.3333%;
+  }
+}
+
+@media (max-width:1024px)and (orientation: landscape){
+  .section2 span{
+    margin: 0 400px;
+  }
+  #image1{
+
+    width: 90%;
+  }
+  .toplinks{
+    width: 100%;
+    padding: 20px 60px;
+  }
+  .bottomlinks {
+      width: 90%;
+      height: 340px;
+      float: left;
+      margin-top: 15px;
+      margin-left: 3.3333%;
+  }
+}
+@media (max-width:737px)and (orientation: portrait){
+.section2 span{
+  margin: 0 400px;
+}
+#image1{
+
+  width: 90%;
+}
+.toplinks{
+  width: 100%;
+  padding: 20px 60px;
+}
+.bottomlinks {
+    width: 90%;
+    height: 340px;
+    float: left;
+    margin-top: 15px;
+    margin-left: 3.3333%;
+}
+}
+@media (max-width:737px)and (orientation: landscape){
+  .section2 span{
+    margin: 0 400px;
+  }
+  #image1{
+
+    width: 90%;
+  }
+  .toplinks{
+    width: 100%;
+    padding: 20px 60px;
+  }
+  .bottomlinks {
+      width: 90%;
+      height: 340px;
+      float: left;
+      margin-top: 15px;
+      margin-left: 3.3333%;
+  }
+}
