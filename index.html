@@ -9,10 +9,10 @@
 </head>
 <body>
   <header>
-    <div class="Nav_bar">
+    <section class="Nav_bar">
       <ul>
-        <li class="bbcimg"><a href="#"><img src="images/bbclogo.jpg"></a></li>
-        <li class="signin"><a href="#"><img src="images/sign-in.jpg">Sign in</a></li>
+        <li><a class="bbcimg" href="#"><img src="images/bbclogo.jpg"></a></li>
+        <li><a class="signin" href="#"><img src="images/sign-in.jpg">Sign in</a></li>
         <li><a href="#">Home</a></li>
         <li><a href="#">News</a></li>
         <li><a href="#">Sport</a></li>
@@ -22,22 +22,67 @@
         <li><a href="#">Future</a></li>
         <li><a href="#">Culture</a></li>
         <li class="more"><a href="#">More</a></li>
-        <li><div class="search-container">
-          <form action>
-            <input type="text" placeholder="Search.." name="search">
-            <button type="submit"><i class="fa fa-search"></i></button>
-          </form>
-        </div></li>
+        <li><form action>
+          <input type="text" placeholder="Search.." name="search">
+          <button type="submit"><i class="fa fa-search"></i></button>
+        </form></li>
       </ul>
     </div>
   </header>
   <section class="container">
-    <section>
+    <section class="title-date">
       <h2>Welcome to BBC.com</h2>
+      <h2 id="date"></h2>
     </section>
-    <section>
-      <h2>Friday, 29 October</h2>
+    <section class="articles">
+      <section id="main-article">
+        <h3 class="main-h3">Trump blitzes swing states two days from US election</h3>
+        <p class="main-p">Donald Trump speaks at rallies in five key battleground states on Sunday, on the penultimate day of campaigning.</p>
+        <p class="media-tag">US ELECTION 2020</p>
+      </section>
+      <section class="aside-articles">
+        <section id="aside-art1">
+          <h4>Missouri official cover up noose by polling booths</h4>
+          <p class="media-tag">US ELECTION 2020</p>
+        </section>
+        <section id="aside-art2">
+          <h4>Spain's funeral homes strike as virus cases rise</h4>
+          <p class="media-tag">EUROPE</p>
+        </section>
+        <section id="aside-art3">
+          <h4>Premier League: Kane penalty gives Tottenham lead over Brighton</h4>
+          <p class="media-tag">FOOTBALL</p>
+        </section>
+        <section id="aside-art4">
+          <h4>Three ideas for how to live a fuller life</h4>
+          <p class="media-tag">DID YOU MISS?</p>
+        </section>
+      </section>
+    </section>
+    <section class="news-module">
+      <h2>News</h2>
+      <ul>
+        <li class="media-list-item-1">
+          <img src="https://ichef.bbc.co.uk/wwhp/624/cpsprodpb/14810/production/_115148938_p08wz4fn.jpg">
+          <p class="media-title">The big issue that could hurt Trump</p>
+          <p class="media-summary">Just ahead of the election, the US is seeing what could be the largest outbreak of the pandemic so far.</p>
+          <p class="media-tag">US ELECTION 2020</p>
+        </li>
+        <li class="media-list-item-2">
+          <img src="https://ichef.bbc.co.uk/wwhp/624/cpsprodpb/3630/production/_115127831_super_promo_what_trump_said_976.png">
+          <p class="media-title">What has Trump said about your country?</p>
+          <p class="media-summary">A look at how Donald Trump's direct approach has changed US relations around the world.</p>
+          <p class="media-tag">NEWS</p>
+        </li>
+        <li class="media-list-item-3">
+          <img src="https://ichef.bbc.co.uk/wwhp/624/cpsprodpb/1436C/production/_115169728_gettyimages-1229391096-1.jpg">
+          <p class="media-title">Man armed with swords kills two in Quebec</p>
+          <p class="media-summary">Police confirm at least two people have died and say they have arrested a man in his mid-20s.</p>
+          <p class="media-tag">US & CANADA</p>
+        </li>
+      </ul>
     </section>
   </section>
 </body>
+<script src="js/main.js"></script>
 </html>
