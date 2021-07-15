@@ -1,192 +1,181 @@
+/* Box Model Hack */
 * {
-      -moz-box-sizing: border-box; /* Firexfox */
-      -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
-      box-sizing: border-box; /* IE */
- }
- nav{
-   color: white;
- }
-section{
-  float: left;
+    -moz-box-sizing: border-box; /* Firexfox */
+    -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+    box-sizing: border-box; /* IE */
+    padding: 0;
+    margin: 0;
 }
-
- nav ul{
-   list-style-type: none;
-   display: inline-block;
-   color: white;
-   border-left: white 1px;
- }
- li{
-   float: left;
- }
- li a{
-   display: block;
-   text-align: center;
-   padding: 10px 10px;
- }
-.link{
-  color: white;
-  text-decoration: none;
-  text-align: center;
-  
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
 }
-header{
-  margin: 0px;
-  text-align: center;
-  font-size: 18px;
-  background-color: #000000;
-  line-height: normal;
+.clear {
+	clear: both;
 }
-.section2{
-  background-color: #e7e8e1;
-  width: 100%;
-}
-#date{
-}
-h4 > span {
-  margin: 0 968px;
-  margin-bottom: 20px;
-  margin-right: 0px;
-  margin-top: 10px;
-}
-
-h4{
-  margin-left:97px;
-}
-#image1{
-  background: linear-gradient( rgba(0, 0, 0, -0.5), rgba(0, 0, 0, 0.5) ), url("../images/watchmen1.jpg");
-  background-size: 100% 100%;
-  height: 350px;
-  width: 45%;
-  float: left;
-  margin-left: 5%;
-}
-h2{
-  color: white;
-  float: bottom;
-  margin-top: 130px;
-}
-#image1 h2{
-  margin-top: 280px;
-}
-p{
-  margin-left: 87px;
-}
-.image2{
-  background: linear-gradient( rgba(0, 0, 0, -0.5), rgba(0, 0, 0, 0.5) ), url("../images/watchmen2.jpg");
-}
-.image0002{
-  background: linear-gradient( rgba(0, 0, 0, -0.5), rgba(0, 0, 0, 0.5) ), url("../images/watchmen3.jpg");
-}
-.image002{
-  background: linear-gradient( rgba(0, 0, 0, -0.5), rgba(0, 0, 0, 0.5) ), url("../images/watchmen4.jpg");
-}
-.image02{
-  background: linear-gradient( rgba(0, 0, 0, -0.5), rgba(0, 0, 0, 0.5) ), url("../images/watchmen5.jpg");
-}
-.toplinks{
-  width: 48%;
-}
-.toplinks > section{
-  background-size: 100% 100%;
-  width: 48%;
-  height: 170px;
-  margin-left: 2%;
-  margin-bottom: 10px;
-  float: left;
-}
-.bottomlinks{
-  width: 30%;
-  height: 340px;
-  float: left;
-  margin-top: 100px;
-  margin-left: 3.3333%;
-}
-.bottomlinks img{
-  width: 100%;
-  height: 250px;
-}
-.bottom{
-  padding: 10px 10px 10px 10px;
-}
-@media (max-width: 1024px) and (orientation: portrait){
-  .section2 span{
-    margin: 0 400px;
+/******************************************
+/* BASE STYLES
+/*******************************************/
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
+  body {
+    font-family: Arial,Helvetica,sans-serif;
   }
-  #image1{
-
-    width: 90%;
-  }
-  .toplinks{
+nav {
+    background: #222;
+    padding: 5px 20px;
+}
+ul {
+    list-style-type: none;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+    background-color: black;
+    color: white;
+}
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.container {
+    margin-left: 15%;
+    margin-right: 15%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.nav_bar ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+}
+.nav_bar li {
+    border-left: 1px solid white;
+    height: inherit;
+    padding: 15px;
+}
+.nav_bar li:nth-child(1) {
+    border-left: none;
+}
+.signin {
+    width: 10rem;
+}
+.signin span {
+    border: none;
+    position: relative;
+    bottom: 7px;
+}
+.more {
+    width: 9rem;
+}
+.welcome-date {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 2rem;
     width: 100%;
-    padding: 20px 60px;
-  }
-  .bottomlinks {
-      width: 90%;
-      height: 340px;
-      float: left;
-      margin-top: 15px;
-      margin-left: 3.3333%;
-  }
 }
-
-@media (max-width:1024px)and (orientation: landscape){
-  .section2 span{
-    margin: 0 400px;
-  }
-  #image1{
-
-    width: 90%;
-  }
-  .toplinks{
-    width: 100%;
-    padding: 20px 60px;
-  }
-  .bottomlinks {
-      width: 90%;
-      height: 340px;
-      float: left;
-      margin-top: 15px;
-      margin-left: 3.3333%;
-  }
-}
-@media (max-width:737px)and (orientation: portrait){
-.section2 span{
-  margin: 0 400px;
-}
-#image1{
-
-  width: 90%;
-}
-.toplinks{
-  width: 100%;
-  padding: 20px 60px;
-}
-.bottomlinks {
-    width: 90%;
-    height: 340px;
+.welcome-date h2 {
     float: left;
-    margin-top: 15px;
-    margin-left: 3.3333%;
 }
+.welcome-date span {
+    float: right;
 }
-@media (max-width:737px)and (orientation: landscape){
-  .section2 span{
-    margin: 0 400px;
-  }
-  #image1{
+.articles {
+    color: white;
+}
+#main-article {
+  background: linear-gradient( rgba(0, 0, 0, -0.5), rgba(0, 0, 0, 0.5) ), url("/images/Question.png");
+  background-size: 100% 100%;
+  height: 390px;
+  width: 50%;
+  float: left;
+}
+.main-article h1, .main-article p, .main-article span {
+  position: relative;
+  top: 210px;
+  margin: 15px;
+}
+.news-module {
+    padding-top: 3rem;
+}
+.side-articles {
+    width: 81rem;
+}
+.art {
+  background-size: 100% 100%;
+  width: 23%;
+  height: 190px;
+  margin: 0 10px 10px 10px;
+  float: left;
+}
+.art h3, .art span {
+  position: relative;
+  top: 90px;
+  margin: 15px;
+  font-size: 100%;
+}
+#article2 {
+  background: linear-gradient( rgba(0, 0, 0, -0.5), rgba(0, 0, 0, 0.5) ), url("/images/watchmen1.jpg");
+  background-size: 100% 100%;
+}
+#article3{
+  background: linear-gradient( rgba(0, 0, 0, -0.5), rgba(0, 0, 0, 0.5) ), url("/images/watchmen2.jpg");
+  background-size: 100% 100%;
+}
+#article4 {
+  background: linear-gradient( rgba(0, 0, 0, -0.5), rgba(0, 0, 0, 0.5) ), url("/images/watchmen3.jpg");
+  background-size: 100% 100%;
+}
+#article5 {
+  background: linear-gradient( rgba(0, 0, 0, -0.5), rgba(0, 0, 0, 0.5) ), url("/images/watchmen4.jpg");
+  background-size: 100% 100%;
+}
+.news-module ul {
+    display: flex;
+    justify-content: center;
+}
+.news-module li {
+    width: 26rem;
+}
+.news-module img {
+    width: 26rem;
+}
+.media-title {
+    font-weight: bold;
+    font-size: 25px;
+}
+.news-module p {
+    padding: 10px;
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+/* Mobile menu */
 
-    width: 90%;
-  }
-  .toplinks{
-    width: 100%;
-    padding: 20px 60px;
-  }
-  .bottomlinks {
-      width: 90%;
-      height: 340px;
-      float: left;
-      margin-top: 15px;
-      margin-left: 3.3333%;
-  }
+/* Tablet menu */
+@media all and (min-width: 600px) {
+    
+}
+/* Desktop menu */
+@media all and (min-width: 900px) {
+
 }
