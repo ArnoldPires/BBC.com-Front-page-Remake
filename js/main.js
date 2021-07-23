@@ -1,4 +1,13 @@
-// The date
+// NavBar
+function myFunction() {
+  let navy = document.getElementById("myTopnav");
+  if (navy.className === "topnav") {
+    navy.className += " responsive";
+  } else {
+    navy.className = "topnav";
+  }
+}
+// Date
 document.getElementById("date").innerHTML = formatAMPM();
 function formatAMPM() {
 var d = new Date(),

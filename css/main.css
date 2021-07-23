@@ -26,149 +26,104 @@
     font-family: Arial,Helvetica,sans-serif;
   }
 nav {
-    background: #222;
+    background: black;
     padding: 5px 20px;
 }
 ul {
     list-style-type: none;
 }
 a {
-    color: white;
     text-decoration: none;
 }
 a:hover {
     text-decoration: underline;
 }
+Body {
+    margin: 0;
+}
 /******************************************
 /* LAYOUT
 /*******************************************/
-header {
+
+/* NavBar */
+.topnav {
+    overflow: hidden;
     background-color: black;
-    color: white;
-}
-header::after {
-  content: '';
-  display: table;
-  clear: both;
-}
-.container {
-    margin-left: 15%;
-    margin-right: 15%;
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-}
-.nav_bar ul {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    height: 45px;
 }
-.nav_bar li {
-    border-left: 1px solid white;
-    height: inherit;
-    padding: 15px;
+.topnav a, .topnav form {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-left: 1px solid #ccc;
 }
-.nav_bar li:nth-child(1) {
-    border-left: none;
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
 }
-.signin {
-    width: 10rem;
+.topnav .icon {
+    display: none;
 }
-.signin span {
-    border: none;
-    position: relative;
-    bottom: 7px;
+.logo {
+    background-image: url(/images/bbclogo.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 8rem;
+    color: #f0f8ff00 !important;
+    border-left: none !important;
+    text-align: start !important;
+}
+.signIn {
+    background-image: url(/images/sign-in.jpg);
+    background-repeat: no-repeat;
+    background-position:left;
+    text-align: left !important;
+    padding-left: 2rem !important;
+    width: 15rem;
 }
 .more {
-    width: 9rem;
+    background-image: url(/images/arrow-down.PNG);
+    background-repeat: no-repeat;
+    background-position: right;
+    width: 10rem;
+    text-align: start !important;
 }
-.welcome-date {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-top: 2rem;
-    width: 100%;
-}
-.welcome-date h2 {
-    float: left;
-}
-.welcome-date span {
-    float: right;
-}
-.articles {
-    color: white;
-}
-#main-article {
-  background: linear-gradient( rgba(0, 0, 0, -0.5), rgba(0, 0, 0, 0.5) ), url("/images/Question.png");
-  background-size: 100% 100%;
-  height: 390px;
-  width: 50%;
-  float: left;
-}
-.main-article h1, .main-article p, .main-article span {
-  position: relative;
-  top: 210px;
-  margin: 15px;
-}
-.news-module {
-    padding-top: 3rem;
-}
-.side-articles {
-    width: 81rem;
-}
-.art {
-  background-size: 100% 100%;
-  width: 23%;
-  height: 190px;
-  margin: 0 10px 10px 10px;
-  float: left;
-}
-.art h3, .art span {
-  position: relative;
-  top: 90px;
-  margin: 15px;
-  font-size: 100%;
-}
-#article2 {
-  background: linear-gradient( rgba(0, 0, 0, -0.5), rgba(0, 0, 0, 0.5) ), url("/images/watchmen1.jpg");
-  background-size: 100% 100%;
-}
-#article3{
-  background: linear-gradient( rgba(0, 0, 0, -0.5), rgba(0, 0, 0, 0.5) ), url("/images/watchmen2.jpg");
-  background-size: 100% 100%;
-}
-#article4 {
-  background: linear-gradient( rgba(0, 0, 0, -0.5), rgba(0, 0, 0, 0.5) ), url("/images/watchmen3.jpg");
-  background-size: 100% 100%;
-}
-#article5 {
-  background: linear-gradient( rgba(0, 0, 0, -0.5), rgba(0, 0, 0, 0.5) ), url("/images/watchmen4.jpg");
-  background-size: 100% 100%;
-}
-.news-module ul {
-    display: flex;
-    justify-content: center;
-}
-.news-module li {
-    width: 26rem;
-}
-.news-module img {
-    width: 26rem;
-}
-.media-title {
-    font-weight: bold;
-    font-size: 25px;
-}
-.news-module p {
-    padding: 10px;
+form input {
+    background-image: url(/images/search-icon.PNG);
+    background-repeat: no-repeat;
+    background-position: right;
 }
 /******************************************
-/* ADDITIONAL STYLES
+/* MEDIA QUERIES
 /*******************************************/
+
+/* NavBar */
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive {display: block;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
 /* Mobile menu */
 
 /* Tablet menu */
